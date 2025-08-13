@@ -23,7 +23,13 @@ int main() {
     int pontosTuristicos2 = 30;
 
    
-    
+    // Cálculo da densidade populacional e PIB per capita.
+   
+    float densidade1 = populacao1 / area1;
+    float densidade2 = populacao2 / area2;
+
+    float pibPerCapita1 = (pib1 * 1000000000.0) / populacao1; 
+    float pibPerCapita2 = (pib2 * 1000000000.0) / populacao2;
 
     return 0;
 }

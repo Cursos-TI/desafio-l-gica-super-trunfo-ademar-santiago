@@ -8,7 +8,7 @@ int main() {
     // Carta 1
     char estado1[] = "RN";
     char codigo1[] = "A01";
-    char cidade1[] = "Currais Novos";
+    char cidade1[] = "Lagoa Nova";
     int populacao1 = 12300000;
     float area1 = 1521.11;
     float pib1 = 699.28; // em bilhões

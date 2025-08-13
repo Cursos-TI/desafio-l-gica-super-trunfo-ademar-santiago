@@ -56,5 +56,17 @@ int main() {
     printf("Densidade Populacional: %.2f hab/km²\n", densidade2);
     printf("PIB per capita: %.2f reais\n", pibPerCapita2);
 
+    // Comparação. 
+    // Aqui escolhemos qual atributo comparar.
+    // Troque "densidade1" e "densidade2" para outro atributo se quiser.
+
+    float atributoCarta1 = densidade1;
+    float atributoCarta2 = densidade2;
+    char atributoNome[] = "Densidade Populacional";
+
+    printf("\nComparação de cartas (Atributo: %s):\n", atributoNome);
+    printf("Carta 1 - %s (%s): %.2f\n", cidade1, estado1, atributoCarta1);
+    printf("Carta 2 - %s (%s): %.2f\n", cidade2, estado2, atributoCarta2);
+
     return 0;
 }

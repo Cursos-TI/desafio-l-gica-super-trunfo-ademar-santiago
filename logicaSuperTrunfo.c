@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h> //Incuir a biblioteca string.h, para usar a função strcmp(). 
 
 int main() {
     
@@ -67,6 +68,27 @@ int main() {
     printf("\nComparação de cartas (Atributo: %s):\n", atributoNome);
     printf("Carta 1 - %s (%s): %.2f\n", cidade1, estado1, atributoCarta1);
     printf("Carta 2 - %s (%s): %.2f\n", cidade2, estado2, atributoCarta2);
+
+
+     // Regras: menor vence para densidade populacional, maior vence para os outros.
+
+    if (strcmp(atributoNome, "Densidade Populacional") == 0) {
+        if (atributoCarta1 < atributoCarta2) {
+            printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+        } else if (atributoCarta2 < atributoCarta1) {
+            printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+        } else {
+            printf("Resultado: Empate!\n");
+        }
+    } else {
+        if (atributoCarta1 > atributoCarta2) {
+            printf("Resultado: Carta 1 (%s) venceu!\n", cidade1);
+        } else if (atributoCarta2 > atributoCarta1) {
+            printf("Resultado: Carta 2 (%s) venceu!\n", cidade2);
+        } else {
+            printf("Resultado: Empate!\n");
+        }
+    }
 
     return 0;
 }
